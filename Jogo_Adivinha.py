@@ -1,6 +1,7 @@
 # ESTE É O JOGO DO ADIVINHA, INICIANDO NA PROGRAMAÇÃO  
 
 import random
+import time
 
 numberSecret = random.randint(1,10)
 
@@ -9,6 +10,7 @@ print('VOU PENSAR EM UM NÚMERO SÓ UM MOMENTO..')
 
 while True:
     for i in range(6):
+        time.sleep(0.4)
         print(str(i)+'...')
 
     for numberSecret in range(1,7):
